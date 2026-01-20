@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/afae3d2134.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Tech Wave</title>
+</head>
+<body>
+    <header>
+        <nav class="max-sm:w-full sm:w-full md:w-full lg:w-full bg-[#1A0B2E] max-sm:py-[16px] max-sm:px-[16px] lg:px-[200px] lg:py-[30px] lg:h-[92px] max-sm:h-[60px] flex justify-between items-center">
+            <div class="lg:w-[219px] lg:h-[32px] max-sm:w-[137px] max-sm:h-[20px]">
+                <a href="#"><img src="./assets/TechWave.png" alt="Logo" class="w-full"></a>
+            </div>
+            <div class="max-sm:hidden lg:block">
+                <ul class="flex justify-between items-center gap-[40px]">
+                    <li class="list-none"><a href="#" class="font-[Inter] font-medium text-[16px] leading-[120%] tracking-[0%] text-[#FFFFFF] opacity-[90%]">About</a></li>
+                    <li><a href="#" class="font-[Inter] font-medium text-[16px] leading-[120%] tracking-[0%] text-[#FFFFFF] opacity-[90%]">Episodes</a></li>
+                    <li><a href="#" class="font-[Inter] font-medium text-[16px] leading-[120%] tracking-[0%] text-[#FFFFFF] opacity-[90%]">Host</a></li>
+                </ul>
+            </div>
+            <div class="max-sm:hidden lg:block">
+                <button class="px-[16px] py-[12px] opacity-[100%] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] flex items-center gap-[4px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] cursor-pointer"><span>Subscribe</span> <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="lg:hidden max-sm:block text-white text-[24px] cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="max-sm:w-full max-sm:py-[40px] max-sm:px-[20px] max-sm:pt-[80px] lg:w-full bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-cover bg-center lg:px-[525px] lg:py-[100px] flex flex-col justify-center items-center lg:gap-[20px] max-sm:gap-[10px] text-center">
+            <div class="bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-center bg-contain lg:w-[400px] lg:h-[400px] max-sm:w-[230px] max-sm:h-[230px] flex justify-center items-center mx-auto">
+                <img src="./assets/microphone.png" alt="microphone" class="lg:w-[117px] lg:h-[175px] max-sm:w-[60px] max-sm:h-[80px]">
+            </div>
+            <div>
+                <h1 class="font-[Inter] font-extrabold lg:text-[60px] max-sm:text-[40px] leading-[auto] tracking-[0%] text-[#FFFFFF]">TechWave</h1>
+            </div>
+            <div>
+                <p class="font-[Inter] font-normal text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] opacity-[80%]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            </div>
+            <div class="flex justify-center items-center gap-[20px] mt-[20px]">
+                <button class="px-[20px] py-[12px] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] cursor-pointer flex items-center gap-[4px]"><i class="fa-brands fa-spotify"></i><span>Listen On Spotify</span></button>
+                <button class="px-[20px] py-[12px] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#00FF88] border border-[#00FF88] cursor-pointer flex items-center gap-[4px]"><i class="fa-regular fa-envelope"></i><span>Subscribe</span></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
