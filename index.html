@@ -33,8 +33,9 @@
     </header>
     <main>
         <div class="max-sm:w-full max-sm:py-[40px] max-sm:px-[20px] max-sm:pt-[80px] lg:w-full bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-cover bg-center lg:px-[525px] lg:py-[100px] flex flex-col justify-center items-center lg:gap-[20px] max-sm:gap-[10px] text-center">
-            <div class="bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-center bg-contain lg:w-[400px] lg:h-[400px] max-sm:w-[230px] max-sm:h-[230px] flex justify-center items-center mx-auto">
+            <div class="bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-center bg-contain lg:w-[400px] lg:h-[400px] max-sm:w-[230px] max-sm:h-[230px] flex justify-center items-center mx-auto relative">
                 <img src="./assets/microphone.png" alt="microphone" class="lg:w-[117px] lg:h-[175px] max-sm:w-[60px] max-sm:h-[80px]">
+                <div class="px-[16px] py-[8px] bg-[#00FF88] rounded-[10000px] font-[Inter] font-semibold text-[18px] leading-[auto] tracking-[0%] font-[#1A0B2E] absolute lg:top-[30px] lg:right-[40px] max-sm:top-[20px] max-sm:right-[10px] shadow-[0px_0px_8px_0px_#00FF88]">NEW</div>
             </div>
             <div>
                 <h1 class="font-[Inter] font-extrabold lg:text-[60px] max-sm:text-[40px] leading-[auto] tracking-[0%] text-[#FFFFFF]">TechWave</h1>
@@ -45,6 +46,41 @@
             <div class="flex justify-center items-center gap-[20px] mt-[20px]">
                 <button class="px-[20px] py-[12px] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] cursor-pointer flex items-center gap-[4px]"><i class="fa-brands fa-spotify"></i><span>Listen On Spotify</span></button>
                 <button class="px-[20px] py-[12px] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#00FF88] border border-[#00FF88] cursor-pointer flex items-center gap-[4px]"><i class="fa-regular fa-envelope"></i><span>Subscribe</span></button>
+            </div>
+        </div>
+
+        <div class="max-sm:w-full max-sm:px-[20px] max-sm:py-[40px] lg:w-full lg:pt-[50px] lg:pb-[120px] lg:px-[200px] bg-[#1A0B2E] mx-auto flex flex-col justify-center items-center gap-[32px]">
+            <div>
+                <h1 class="font-[Inter] font-bold lg:text-[48px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF]">About the Podcast</h1>
+            </div>
+            <div>
+                <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] opacity-[80%] text-[#FFFFFF] mb-[16px] text-center">
+                    TechWave is your go-to podcast for staying ahead in the fast-paced world of technology. <br> We break down complex topics into digestible insights, explore productivity strategies that actually work, <br> and share stories of personal growth from industry leaders.
+                </p>
+                <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] opacity-[80%] text-[#FFFFFF] text-center">
+                    Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
+                </p>
+            </div>
+            <div class="max-sm:mt-[40px] max-sm:mb-[40px] lg:mt-[80px] lg:mb-[80px]">
+                <hr class="h-px border-0 bg-white/10 lg:w-[1200px] max-sm:w-[400px]">
+            </div>
+            <div class="grid lg:grid-cols-4 max-sm:grid-cols-2 lg:gap-[80px] max-sm:gap-[40px]">
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[Inter] font-black text-[48px] leading-[auto] tracking-[0%] text-[#00FF88] text-center">150K+</h1>
+                    <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] text-[#FFFFFF] opacity-[80%] text-center">MONTHLY LISTENERS</p>
+                </div> 
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[Inter] font-black text-[48px] leading-[auto] tracking-[0%] text-[#00FF88] text-center">200+</h1>
+                    <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] text-[#FFFFFF] opacity-[80%] text-center">EPISODES PUBLISHED</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[Inter] font-black text-[48px] leading-[auto] tracking-[0%] text-[#00FF88] text-center">4.9 <i class="fa-solid fa-star"></i></h1>
+                    <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] text-[#FFFFFF] opacity-[80%] text-center">AVERAGE RATING</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-[10px]">
+                    <h1 class="font-[Inter] font-black text-[48px] leading-[auto] tracking-[0%] text-[#00FF88] text-center">50+</h1>
+                    <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] text-[#FFFFFF] opacity-[80%] text-center">INDUSTRY EXPERTS</p>
+                </div>
             </div>
         </div>
     </main>
