@@ -11,47 +11,50 @@
     <title>Tech Wave</title>
 </head>
 <body>
-    <header>
-        <nav class="max-sm:w-full sm:w-full md:w-full lg:w-full bg-[#1A0B2E] max-sm:py-[16px] max-sm:px-[16px] lg:px-[200px] lg:py-[30px] lg:h-[92px] max-sm:h-[60px] flex justify-between items-center">
-            <div class="lg:w-[219px] lg:h-[32px] max-sm:w-[137px] max-sm:h-[20px]">
+    <header class="w-full">
+        <nav class="max-sm:w-full sm:w-full md:w-full lg:w-full bg-[#1A0B2E] max-sm:py-[16px] max-sm:px-[16px] sm:py-[20px] sm:px-[20px] md:px-[25px] md:py-[25px] lg:px-[200px] lg:py-[30px] lg:h-[92px] max-sm:h-[60px] flex flex-row justify-between items-center">
+            <div class="lg:w-[219px] lg:h-[32px] sm:w-[200px] sm:h-[30px] md:w-[219px] md:h-[32px] max-sm:w-[137px] max-sm:h-[20px]">
                 <a href="#"><img src="./assets/TechWave.png" alt="Logo" class="w-full"></a>
             </div>
-            <div class="max-sm:hidden lg:block">
+            <div class="max-sm:hidden sm:hidden md:block lg:block">
                 <ul class="flex justify-between items-center gap-[40px]">
                     <li class="list-none"><a href="#" class="font-[Inter] font-medium text-[16px] leading-[120%] tracking-[0%] text-[#FFFFFF] opacity-[90%]">About</a></li>
                     <li><a href="#" class="font-[Inter] font-medium text-[16px] leading-[120%] tracking-[0%] text-[#FFFFFF] opacity-[90%]">Episodes</a></li>
                     <li><a href="#" class="font-[Inter] font-medium text-[16px] leading-[120%] tracking-[0%] text-[#FFFFFF] opacity-[90%]">Host</a></li>
                 </ul>
             </div>
-            <div class="max-sm:hidden lg:block">
-                <button class="px-[16px] py-[12px] opacity-[100%] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] flex items-center gap-[4px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] cursor-pointer"><span>Subscribe</span> <i class="fa-solid fa-arrow-right"></i></button>
+            <div class="max-sm:hidden sm:block md:block lg:block">
+                <button class="sm:px-[10px] sm:py-[10px] lg:px-[16px] lg:py-[12px] opacity-[100%] rounded-[10000px] font-[Inter] font-semibold sm:text-[12px] lg:text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] flex items-center gap-[4px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] cursor-pointer"><span>Subscribe</span><i class="fa-solid fa-arrow-right"></i></button>
             </div>
-            <div class="lg:hidden max-sm:block text-white text-[24px] cursor-pointer">
+            <div class="lg:hidden sm:hidden md:hidden max-sm:block text-white text-[24px] cursor-pointer">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
     <main>
-        <div class="max-sm:w-full max-sm:py-[40px] max-sm:px-[20px] max-sm:pt-[80px] lg:w-full bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-cover bg-center lg:px-[525px] lg:py-[100px] flex flex-col justify-center items-center lg:gap-[20px] max-sm:gap-[10px] text-center">
-            <div class="bg-[url('./assets/hero-circle.png')] bg-no-repeat bg-center bg-contain lg:w-[400px] lg:h-[400px] max-sm:w-[230px] max-sm:h-[230px] flex justify-center items-center mx-auto relative">
-                <img src="./assets/microphone.png" alt="microphone" class="lg:w-[117px] lg:h-[175px] max-sm:w-[60px] max-sm:h-[80px]">
-                <div class="px-[16px] py-[8px] bg-[#00FF88] rounded-[10000px] font-[Inter] font-semibold text-[18px] leading-[auto] tracking-[0%] font-[#1A0B2E] absolute lg:top-[30px] lg:right-[40px] max-sm:top-[20px] max-sm:right-[10px] shadow-[0px_0px_8px_0px_#00FF88]">NEW</div>
+        <div class="max-sm:w-full max-sm:py-[40px] max-sm:px-[20px] sm:w-full sm:py-[40px] sm:px-[20px] md:w-full md:py-[40px] md:px-[20px] lg:w-full lg:px-[525px] lg:py-[100px] bg-[url('./assets/hero-bg.png')] bg-no-repeat bg-cover bg-center lg:gap-[20px] sm:gap-[10px] md:gap-[20px] max-sm:gap-[10px] flex flex-col justify-center items-center">
+            <div class="lg:w-[400px] lg:h-[400px] max-sm:w-[230px] max-sm:h-[230px] sm:w-[250px] sm:h-[250px] md:w-[320px] md:h-[320px] flex justify-center items-center relative">
+                <div class="flex items-center justify-center lg:static absolute inset-0">
+                    <img src="./assets/hero-circle.png" alt="" class="w-full h-full object-contain ">
+                </div>
+                <img src="./assets/microphone.png" alt="microphone" class="lg:w-[117px] lg:h-[175px] sm:w-[70px] sm:h-[100px] md:w-[100px] md:h-[150px] max-sm:w-[60px] max-sm:h-[80px] absolute lg:top-[112px] lg:left-[142px] sm:top-[80px] sm:left-[90px] md:top-[95px] md:left-[110px] max-sm:top-[80px] max-sm:left-[85px]">
+                <div class="px-[16px] py-[8px] bg-[#00FF88] rounded-[10000px] font-[Inter] font-semibold text-[18px] leading-[auto] tracking-[0%] font-[#1A0B2E] absolute lg:top-[30px] lg:right-[60px] sm:top-[20px] sm:right-[10px] md:top-[20px] md:right-[20px] max-sm:top-[20px] max-sm:right-[10px] shadow-[0px_0px_8px_0px_#00FF88]">NEW</div>
             </div>
             <div>
-                <h1 class="font-[Inter] font-extrabold lg:text-[60px] max-sm:text-[40px] leading-[auto] tracking-[0%] text-[#FFFFFF]">TechWave</h1>
+                <h1 class="font-[Inter] font-extrabold lg:text-[60px] sm:text-[50px] md:text-[60px] max-sm:text-[40px] leading-[auto] tracking-[0%] text-[#FFFFFF]">TechWave</h1>
             </div>
-            <div>
-                <p class="font-[Inter] font-normal text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] opacity-[80%]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            <div class="lg:w-[600px]">
+                <p class="font-[Inter] font-normal text-[16px] leading-[24px] tracking-[0%] text-[#FFFFFF] opacity-[80%] text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
             </div>
             <div class="flex justify-center items-center gap-[20px] mt-[20px]">
-                <button class="px-[20px] py-[12px] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#FFFFFF] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] cursor-pointer flex items-center gap-[4px]"><i class="fa-brands fa-spotify"></i><span>Listen On Spotify</span></button>
-                <button class="px-[20px] py-[12px] rounded-[10000px] font-[Inter] font-semibold text-[16px] leading-[auto] tracking-[0%] text-[#00FF88] border border-[#00FF88] cursor-pointer flex items-center gap-[4px]"><i class="fa-regular fa-envelope"></i><span>Subscribe</span></button>
+                <button class="px-[16px] py-[10px] md:px-[16px] md:py-[10px] md:text-[14px] lg:px-[20px] lg:py-[12px] lg:text-[16px] rounded-[10000px] font-[Inter] font-semibold text-[12px] leading-[auto] tracking-[0%] text-[#FFFFFF] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] cursor-pointer flex items-center gap-[4px] lg:w-[200px]"><i class="fa-brands fa-spotify"></i><span>Listen On Spotify</span></button>
+                <button class="px-[16px] py-[10px] md:px-[16px] md:py-[10px] md:text-[14px] lg:px-[20px] lg:py-[12px] lg:text-[16px] rounded-[10000px] font-[Inter] font-semibold text-[12px] leading-[auto] tracking-[0%] text-[#00FF88] border border-[#00FF88] cursor-pointer flex items-center gap-[4px]"><i class="fa-regular fa-envelope"></i><span>Subscribe</span></button>
             </div>
         </div>
 
-        <div class="max-sm:w-full max-sm:px-[20px] max-sm:py-[40px] lg:w-full lg:pt-[50px] lg:pb-[120px] lg:px-[200px] bg-[#1A0B2E] mx-auto flex flex-col justify-center items-center gap-[32px]">
+        <div class="max-sm:w-full max-sm:px-[20px] max-sm:py-[40px] sm:w-full sm:px-[20px] sm:py-[40px] md:w-full md:px-[20px] md:py-[40px] lg:w-full lg:pt-[50px] lg:pb-[120px] lg:px-[200px] bg-[#1A0B2E] mx-auto flex flex-col justify-center items-center gap-[32px]">
             <div>
-                <h1 class="font-[Inter] font-bold lg:text-[48px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF]">About the Podcast</h1>
+                <h1 class="font-[Inter] font-bold lg:text-[48px] max-sm:text-[32px] sm:text-[40px] md:text-[48px] leading-[auto] tracking-[0%] text-[#FFFFFF]">About the Podcast</h1>
             </div>
             <div>
                 <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] opacity-[80%] text-[#FFFFFF] mb-[16px] text-center">
@@ -61,10 +64,10 @@
                     Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
                 </p>
             </div>
-            <div class="max-sm:mt-[40px] max-sm:mb-[40px] lg:mt-[80px] lg:mb-[80px]">
-                <hr class="h-px border-0 bg-white/10 lg:w-[1200px] max-sm:w-[400px]">
+            <div class="max-sm:mt-[40px] max-sm:mb-[40px] sm:mt-[40px] sm:mb-[40px] md:mt-[40px] md:mb-[40px] lg:mt-[80px] lg:mb-[80px]">
+                <hr class="h-px border-0 bg-white/10 lg:w-[1200px] md:w-[1000px] sm:w-[600px] max-sm:w-[400px]">
             </div>
-            <div class="grid lg:grid-cols-4 max-sm:grid-cols-2 lg:gap-[80px] max-sm:gap-[40px]">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 max-sm:grid-cols-2 lg:gap-[80px] sm:gap-[40px] md:gap-[50px] max-sm:gap-[40px]">
                 <div class="flex flex-col justify-center items-center gap-[10px]">
                     <h1 class="font-[Inter] font-black text-[48px] leading-[auto] tracking-[0%] text-[#00FF88] text-center">150K+</h1>
                     <p class="font-[Inter] font-normal text-[16px] leading-[20px] tracking-[0%] text-[#FFFFFF] opacity-[80%] text-center">MONTHLY LISTENERS</p>
@@ -85,12 +88,12 @@
         </div>
 
 
-        <div class="lg:px-[200px] lg:py-[120px] max-sm:px-[20px] max-sm:py-[40px] bg-[#230E3D] flex flex-col justify-center items-center lg:gap-[70px] max-sm:gap-[16px] mx-auto">
+        <div class="lg:w-full lg:px-[200px] lg:py-[120px] sm:w-full sm:px-[20px] sm:py-[40px] md:w-full md:px-[40px] md:py-[120px] max-sm:w-full max-sm:px-[20px] max-sm:py-[40px] bg-[#230E3D] flex flex-col justify-center items-center lg:gap-[70px] sm:gap-[30px] md:gap-[50px] max-sm:gap-[16px] mx-auto">
             <div>
-                <h1 class="font-[Inter] font-bold lg:text-[48px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF] text-center">Why Choose TechWave</h1>
+                <h1 class="font-[Inter] font-bold lg:text-[48px] sm:text-[32px] md:text-[48px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF] text-center">Why Choose TechWave</h1>
             </div>
-            <div class="grid lg:grid-cols-3 lg:grid-rows-3 lg:w-[1200px] lg:h-[790px] lg:gap-[30px] mx-auto max-sm:grid-cols-1 max-sm:grid-rows-5 max-sm:gap-[20px]">
-                <div class="lg:row-span-2 lg:col-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px]">
+            <div class="grid lg:grid-cols-3 lg:grid-rows-3 lg:w-full lg:h-auto lg:gap-[30px] max-sm:grid-cols-1 max-sm:grid-rows-5 max-sm:gap-[20px] sm:grid-cols-1 sm:grid-rows-5 sm:gap-[20px] md:grid-cols-2 md:grid-rows-3 md:gap-[30px] mx-auto">
+                <div class="lg:row-span-2 lg:col-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px] sm:px-[24px] sm:py-[24px] sm:gap-[10px] md:px-[40px] md:py-[40px] md:gap-[15px]">
                     <div>
                         <img src="./assets/headphone.png" alt="">
                     </div>
@@ -103,7 +106,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="lg:col-span-2 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px]">
+                <div class="lg:col-span-2 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px] sm:px-[24px] sm:py-[24px] sm:gap-[10px] md:px-[40px] md:py-[40px] md:gap-[15px]">
                     <div>
                         <img src="./assets/device.png" alt="">
                     </div>
@@ -116,7 +119,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="lg:col-span-2 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px]">
+                <div class="lg:col-span-2 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px] sm:px-[24px] sm:py-[24px] sm:gap-[10px] md:px-[40px] md:py-[40px] md:gap-[15px]">
                     <div>
                         <img src="./assets/location.png" alt="">
                     </div>
@@ -129,7 +132,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="lg:col-span-2 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px]">
+                <div class="lg:col-span-2 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px] sm:px-[24px] sm:py-[24px] sm:gap-[10px] md:px-[40px] md:py-[40px] md:gap-[15px]">
                     <div>
                         <img src="./assets/zap-fast.png" alt="">
                     </div>
@@ -142,7 +145,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="lg:col-span-1 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px]">
+                <div class="lg:col-span-1 lg:row-span-1 lg:px-[40px] lg:py-[40px] bg-[#351165] rounded-[40px] flex flex-col justify-center items-start lg:gap-[15px] max-sm:px-[24px] max-sm:py-[24px] max-sm:gap-[10px] sm:px-[24px] sm:py-[24px] sm:gap-[10px] md:px-[40px] md:py-[40px] md:gap-[15px]">
                     <div>
                         <img src="./assets/resource.png" alt="">
                     </div>
@@ -158,21 +161,21 @@
             </div>
         </div>
 
-        <div class="mx-auto lg:px-[200px] lg:py-[120px] max-sm:px-[20px] max-sm:py-[40px] flex flex-col justify-center items-center bg-[#1A0B2E] lg:gap-[120px] max-sm:gap-[60px]">
-            <div class="flex flex-col justify-center items-center lg:gap-[40px] max-sm:gap-[25px]">
+        <div class="lg:w-full lg:px-[200px] lg:py-[120px] sm:w-full sm:px-[20px] sm:py-[40px] md:w-full md:px-[40px] md:py-[120px] max-sm:w-full max-sm:px-[20px] max-sm:py-[40px] mx-auto flex flex-col justify-center items-center bg-[#1A0B2E] lg:gap-[120px] sm:gap-[60px] md:gap-[120px] max-sm:gap-[60px]">
+            <div class="flex flex-col justify-center items-center lg:gap-[40px] md:gap-[40px] sm:gap-[25px] max-sm:gap-[25px]">
                 <div>
-                    <h1 class="font-[Inter] font-bold lg:text-[48px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Featured Episodes</h1>
+                    <h1 class="font-[Inter] font-bold lg:text-[48px] md:text-[40px] sm:text-[32px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Featured Episodes</h1>
                 </div>
-                <div class="flex lg:justify-center lg:items-center lg:gap-[40px] max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:gap-[20px]">
-                    <a href="https://youtu.be/ObA4ne4TVsE?si=Fa8fcQWjP8U_hkWf" target="_blank">
-                        <div class="lg:w-[380px] lg:h-[215px] max-sm:w-[400px] max-sm:h-[225px] bg-[url('./assets/Rectangle1.png')] flex justify-center items-center bg-no-repeat bg-center bg-cover">
-                            <div class="lg:w-[60px] lg:h-[60px] max-sm:w-[60px] max-sm:h-[60px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] rounded-full flex justify-center items-center">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 max-sm:grid-cols-1 lg:gap-[40px] md:gap-[30px] sm:gap-[20px] max-sm:gap-[20px] w-full max-w-[1400px] mx-auto">
+                    <a href="https://youtu.be/ObA4ne4TVsE?si=Fa8fcQWjP8U_hkWf" target="_blank" class="w-full flex flex-col h-full">
+                        <div class="w-full h-[214px] bg-[url('./assets/Rectangle1.png')] flex justify-center items-center bg-no-repeat bg-center bg-cover rounded-tl-3xl rounded-tr-3xl">
+                            <div class="lg:w-[60px] lg:h-[60px] md:w-[60px] md:h-[60px] sm:w-[60px] sm:h-[60px] max-sm:w-[60px] max-sm:h-[60px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-play text-[#FFFFFF] text-[30px]"></i>
                             </div>
                         </div>
-                        <div class="lg:px-[24px] lg:py-[24px] max-sm:px-[16px] max-sm:py-[16px] lg:w-[380px] max-sm:w-[400px] bg-[#250D44] flex flex-col justify-start items-start lg:gap-[16px] max-sm:gap-[10px] rounded-bl-3xl rounded-br-3xl">
+                        <div class="w-full px-[24px] py-[24px] bg-[#250D44] flex flex-col justify-start items-start lg:gap-[16px] md:gap-[16px] sm:gap-[10px] max-sm:gap-[10px] rounded-bl-3xl rounded-br-3xl flex-1">
                             <div>
-                                <h1 class="font-[Inter] font-bold lg:text-[24px] max-sm:text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF]">The Future of AI in Everyday Life</h1>
+                                <h1 class="font-[Inter] font-bold lg:text-[24px] md:text-[24px] sm:text-[20px] max-sm:text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF]">The Future of AI in Everyday Life</h1>
                             </div>
                             <div>
                                 <p class="font-[Inter] font-normal text-[16px] leading-[24px] tracking-[0%] text-[#FFFFFF] opacity-[60%]">Exploring how artificial intelligence is transforming our daily routines and what to expect in the next decade.</p>
@@ -183,15 +186,15 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://youtu.be/QOKLW5ITEiI?si=ocEl-XeYEUfhjPLB" target="_blank">
-                        <div class="lg:w-[380px] lg:h-[215px] max-sm:w-[400px] max-sm:h-[225px] bg-[url('./assets/Rectangle11.png')] flex justify-center items-center bg-no-repeat bg-center bg-cover">
-                            <div class="lg:w-[60px] lg:h-[60px] max-sm:w-[60px] max-sm:h-[60px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] rounded-full flex justify-center items-center">
+                    <a href="https://youtu.be/QOKLW5ITEiI?si=ocEl-XeYEUfhjPLB" target="_blank" class="w-full flex flex-col h-full">
+                        <div class="w-full h-[214px] bg-[url('./assets/Rectangle11.png')] flex justify-center items-center bg-no-repeat bg-center bg-cover rounded-tl-3xl rounded-tr-3xl">
+                            <div class="lg:w-[60px] lg:h-[60px] md:w-[60px] md:h-[60px] sm:w-[60px] sm:h-[60px] max-sm:w-[60px] max-sm:h-[60px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-play text-[#FFFFFF] text-[30px]"></i>
                             </div>
                         </div>
-                        <div class="lg:px-[24px] lg:py-[24px] max-sm:px-[16px] max-sm:py-[16px] lg:w-[380px] max-sm:w-[400px] bg-[#250D44] flex flex-col justify-start items-start lg:gap-[16px] max-sm:gap-[10px] rounded-bl-3xl rounded-br-3xl">
+                        <div class="w-full px-[24px] py-[24px] bg-[#250D44] flex flex-col justify-start items-start lg:gap-[16px] md:gap-[16px] sm:gap-[10px] max-sm:gap-[10px] rounded-bl-3xl rounded-br-3xl flex-1">
                             <div>
-                                <h1 class="font-[Inter] font-bold lg:text-[24px] max-sm:text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Building Better Habits for Remote Work</h1>
+                                <h1 class="font-[Inter] font-bold lg:text-[24px] md:text-[24px] sm:text-[20px] max-sm:text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Building Better Habits for Remote Work</h1>
                             </div>
                             <div>
                                 <p class="font-[Inter] font-normal text-[16px] leading-[24px] tracking-[0%] text-[#FFFFFF] opacity-[60%]">Practical strategies for staying productive and maintaining work-life balance in a remote environment.</p>
@@ -202,15 +205,15 @@
                             </div>
                         </div>
                     </a>
-                    <a href="https://youtu.be/XmWkcePhf84?si=vDoDyV5liS-EyyqL" target="_blank">
-                        <div class="lg:w-[380px] lg:h-[215px] max-sm:w-[400px] max-sm:h-[225px] bg-[url('./assets/Rectangle12.png')] flex justify-center items-center bg-no-repeat bg-center bg-cover">
-                            <div class="lg:w-[60px] lg:h-[60px] max-sm:w-[60px] max-sm:h-[60px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] rounded-full flex justify-center items-center">
+                    <a href="https://youtu.be/XmWkcePhf84?si=vDoDyV5liS-EyyqL" target="_blank" class="w-full flex flex-col h-full">
+                        <div class="w-full h-[214px] bg-[url('./assets/Rectangle12.png')] flex justify-center items-center bg-no-repeat bg-center bg-cover rounded-tl-3xl rounded-tr-3xl">
+                            <div class="lg:w-[60px] lg:h-[60px] md:w-[60px] md:h-[60px] sm:w-[60px] sm:h-[60px] max-sm:w-[60px] max-sm:h-[60px] bg-[linear-gradient(-126deg,#9100F8,#FB09B4,#F7E93F)] rounded-full flex justify-center items-center">
                                 <i class="fa-solid fa-play text-[#FFFFFF] text-[30px]"></i>
                             </div>
                         </div>
-                        <div class="lg:px-[24px] lg:py-[24px] max-sm:px-[16px] max-sm:py-[16px] lg:w-[380px] max-sm:w-[400px] bg-[#250D44] flex flex-col justify-start items-start lg:gap-[16px] max-sm:gap-[10px] rounded-bl-3xl rounded-br-3xl">
+                        <div class="w-full px-[24px] py-[24px] bg-[#250D44] flex flex-col justify-start items-start lg:gap-[16px] md:gap-[16px] sm:gap-[10px] max-sm:gap-[10px] rounded-bl-3xl rounded-br-3xl flex-1">
                             <div>
-                                <h1 class="font-[Inter] font-bold lg:text-[24px] max-sm:text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Career Growth in Tech: A Roadmap</h1>
+                                <h1 class="font-[Inter] font-bold lg:text-[24px] md:text-[24px] sm:text-[20px] max-sm:text-[20px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Career Growth in Tech: A Roadmap</h1>
                             </div>
                             <div>
                                 <p class="font-[Inter] font-normal text-[16px] leading-[24px] tracking-[0%] text-[#FFFFFF] opacity-[60%]">Expert advice on navigating your tech career from junior developer to senior leadership roles.</p>
@@ -223,16 +226,16 @@
                     </a>
                 </div>
             </div>
-            <div class="flex flex-col justify-center items-center lg:gap-[40px] max-sm:gap-[25px]">
+            <div class="flex flex-col justify-center items-center lg:gap-[40px] md:gap-[30px] sm:gap-[30px] max-sm:gap-[25px]">
                 <div>
-                    <h1 class="font-[Inter] font-bold lg:text-[48px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Meet The Host</h1>
+                    <h1 class="font-[Inter] font-bold lg:text-[48px] md:text-[48px] sm:text-[32px] max-sm:text-[32px] leading-[auto] tracking-[0%] text-[#FFFFFF]">Meet The Host</h1>
                 </div>
-                <div class="bg-[#533C72] flex lg:flex-row max-sm:flex-col justify-center items-center lg:w-[1200px] lg:h-[280px] max-sm:w-[400px] max-sm:h-[483px] lg:px-[40px] lg:py-[40px] max-sm:px-[24px] max-sm:py-[24px] lg:gap-[24px] max-sm:gap-[16px] lg:rounded-[40px] max-sm:rounded-[24px]">
-                    <div class="lg:w-[500px] lg:h-[200px] max-sm:w-[150px] max-sm:h-[150px]">
-                        <img src="./assets/host.png" alt="" class="w-full">
+                <div class="lg:w-full lg:h-auto md:w-full md:h-auto sm:w-full sm:h-auto max-sm:w-full max-sm:h-auto bg-[#533C72] flex lg:flex-row md:flex-col sm:flex-col max-sm:flex-col justify-center items-center lg:px-[40px] lg:py-[40px] md:px-[24px] md:py-[24px] sm:px-[24px] sm:py-[24px] max-sm:px-[24px] max-sm:py-[24px] lg:gap-[24px] md:gap-[24px] sm:gap-[16px] max-sm:gap-[16px] lg:rounded-[40px] md:rounded-[40px] sm:rounded-[24px] max-sm:rounded-[24px]">
+                    <div class="flex-shrink-0 lg:w-[200px] lg:h-[200px] md:w-[150px] md:h-[150px] sm:w-[150px] sm:h-[150px] max-sm:w-[150px] max-sm:h-[150px]">
+                        <img src="./assets/host.png" alt="" class="w-full h-full object-cover rounded-full">
                     </div>
-                    <div class="flex flex-col justify-center lg:items-start max-sm:items-center gap-[16px]">
-                        <h1 class="font-[Inter] font-bold lg:text-[32px] max-sm:text-[24px] leading-[auto] tracking-[0%] text-[#FFFFFF] max-sm:text-center">Alex Kumar</h1>
+                    <div class="flex flex-col justify-center lg:items-start md:items-start sm:items-center max-sm:items-center gap-[16px]">
+                        <h1 class="font-[Inter] font-bold lg:text-[32px] md:text-[32px] sm:text-[24px] max-sm:text-[24px] leading-[auto] tracking-[0%] text-[#FFFFFF] max-sm:text-center">Alex Kumar</h1>
                         <p class="font-[Inter] font-normal text-[16px] leading-[24px] tracking-[0%] text-[#FFFFFF] opacity-[60%] max-sm:text-center">
                             Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.
                         </p>
@@ -263,14 +266,14 @@
             </div>
         </div>
     </main>
-    <footer class="w-full bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-center bg-cover lg:px-[120px] lg:py-[120px] max-sm:px-[20px] max-sm:py-[40px] flex justify-center items-center">
-        <div class="flex flex-col justify-center items-center lg:gap-[40px] max-sm:gap-[24px]">
-            <div class="lg:w-[410px] lg:h-[60px] max-sm:w-[220px] max-sm:h-[32px]">
+    <footer class="w-full bg-[url('./assets/footer-bg.png')] bg-no-repeat bg-center bg-cover lg:px-[120px] lg:py-[120px] md:px-[120px] md:py-[120px] sm:px-[20px] sm:py-[40px] max-sm:px-[20px] max-sm:py-[40px] flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center lg:gap-[40px] md:gap-[40px] sm:gap-[24px] max-sm:gap-[24px]">
+            <div class="lg:w-max-[410px] lg:h-max-[60px] md:w-max-[410px] md:h-max-[60px] sm:w-max-[220px] sm:h-max-[32px] max-sm:w-min-[220px] max-sm:h-min-[32px]">
                 <a href="#">
                     <img src="./assets/TechWave.png" alt="" class="w-full">
                 </a>
             </div>
-            <div class="lg:flex lg:justify-center lg:items-center lg:gap-[80px] max-sm:grid max-sm:grid-cols-2 max-sm:gap-[20px] max-sm:justify-center max-sm:items-center">
+            <div class="lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[80px] md:flex md:flex-row md:justify-center md:items-center md:gap-[80px] sm:flex sm:flex-row sm:justify-center sm:items-center sm:gap-[40px] max-sm:grid max-sm:grid-cols-2 max-sm:gap-[20px] max-sm:justify-center max-sm:items-center">
                 <div class="flex lg:justify-center max-sm:justify-start items-center gap-[10px]">
                     <img src="./assets/spotify.png" alt="">
                     <a href="https://open.spotify.com/">
